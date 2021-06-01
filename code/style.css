@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body{
+    font-family: 'Odibee Sans', cursive;
+}
+
+/* HEADER =================== */
+#title{
+    margin: auto;
+    text-align: center;
+    font-size: 45px;
+    background-color: rgb(3, 24, 143);
+    color: white;
+    width: 300px;
+    border-radius: 15px;
+}
+
+/* MAIN =================== */
+#title-2{
+    margin-top: 2rem;
+    font-size: 30px;
+}
+
+select{
+    width: 150px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#calcular{
+    margin-top: 1.5rem;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: solid black 1px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#calcular:hover{
+    background-color: rgb(3, 24, 143);
+    color: white;
+}
+
+#title-3{
+    text-align: center;
+    font-size: 40px;
+}
+
+#res{
+    text-align: center;
+    font-size: 25px;
+}
