@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Odibee Sans', cursive;
+    background-image: linear-gradient(to left,rgb(30, 50, 163), #af1a1f);
 }
 
 /* HEADER =================== */
@@ -9,13 +10,24 @@ body{
     margin: auto;
     text-align: center;
     font-size: 45px;
-    background-color: rgb(3, 24, 143);
-    color: white;
+    background-color: #243dc7;
+    color: #EA2027;
     width: 300px;
     border-radius: 15px;
+    box-shadow: 4px 4px 8px #172677;
 }
 
 /* MAIN =================== */
+main{
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 3px 3px 6px;
+}
+
 #title-2{
     margin-top: 2rem;
     font-size: 30px;
