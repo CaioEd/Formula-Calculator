@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Odibee Sans', cursive;
-    background-image: linear-gradient(to left,rgb(30, 50, 163), #af1a1f);
+    background-image: linear-gradient(to left,#09BA82,#0AC4BE,#0085AD);
 }
 
 /* HEADER =================== */
@@ -10,11 +10,11 @@ body{
     margin: auto;
     text-align: center;
     font-size: 45px;
-    background-color: #243dc7;
-    color: #EA2027;
-    width: 300px;
+    background-color: #2CBCD6;
+    color: #0D0D0D;
+    width: 270px;
     border-radius: 15px;
-    box-shadow: 4px 4px 8px #172677;
+    box-shadow: 4px 4px 8px ;
 }
 
 /* MAIN =================== */
@@ -39,6 +39,7 @@ select{
     border-radius: 8px;
     font-size: 18px;
     cursor: pointer;
+    border: solid black 1px;
 }
 
 #calcular{
@@ -52,8 +53,7 @@ select{
 }
 
 #calcular:hover{
-    background-color: rgb(3, 24, 143);
-    color: white;
+    background-color: #2CBCD6;
 }
 
 #title-3{
