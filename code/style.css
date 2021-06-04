@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 body{
-    font-family: 'Odibee Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(to left,#09BA82,#0AC4BE,#0085AD);
 }
 
@@ -9,6 +10,7 @@ body{
 #title{
     margin: auto;
     text-align: center;
+    font-family: 'Odibee Sans', cursive;
     font-size: 45px;
     background-color: #2CBCD6;
     color: #0D0D0D;
@@ -58,7 +60,7 @@ select{
 
 #title-3{
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 #res{
