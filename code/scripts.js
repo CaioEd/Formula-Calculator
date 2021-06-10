@@ -9,6 +9,7 @@ function calcular() {
     const areaR = 'Área retângulo'
     const areaQ = 'Área quadrado'
     const areaT = 'Área triângulo'
+    const jurosS = 'Juros Simples'
     
     if(select.value == bhask){
         const abha = prompt('Digite o valor de a:')
@@ -64,6 +65,16 @@ function calcular() {
           alert(`Valores digitados são inválidos!`)
           res.innerHTML = ('')
        } 
+    } else if (select.value == jurosS){
+        const capital = prompt('Digite o valor inicial (capital):')
+        const n9 = Number(capital)
+        const taxa = prompt('Digite a taxa de juros:')
+        const i = Number(taxa)
+        const n10 = i/100
+        const tempo = prompt('Digite o tempo (meses):')
+        const n11 = Number(tempo)
+        const taxaJurosS = n9*n10*n11
+        res.innerHTML = (`A taxa de juros é: R$${taxaJurosS}`)
     }
     
 }
