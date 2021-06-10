@@ -66,15 +66,21 @@ function calcular() {
           res.innerHTML = ('')
        } 
     } else if (select.value == jurosS){
-        const capital = prompt('Digite o valor inicial (capital):')
-        const n9 = Number(capital)
-        const taxa = prompt('Digite a taxa de juros:')
-        const i = Number(taxa)
+        const capitalS = prompt('Digite o valor inicial (capital):')
+        const n9 = Number(capitalS)
+        const taxaS = prompt('Digite a taxa de juros:')
+        const i = Number(taxaS)
         const n10 = i/100
-        const tempo = prompt('Digite o tempo (meses):')
-        const n11 = Number(tempo)
+        const tempoS = prompt('Digite o tempo (meses):')
+        const n11 = Number(tempoS)
         const taxaJurosS = n9*n10*n11
-        res.innerHTML = (`A taxa de juros é: R$${taxaJurosS}`)
+        const totalJuros = Number(taxaJurosS)
+        const montanteS = totalJuros + n9
+        res.innerHTML = (`A taxa de juros é: R$${totalJuros} <br/> O montante é R$${montanteS}`)
+        if(isNaN(n9) || isNaN(n10) || isNaN(n11)){
+          alert(`Valores digitados são inválidos!`)
+          res.innerHTML = ('')
+        }
     }
     
 }
