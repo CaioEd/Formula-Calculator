@@ -4,14 +4,16 @@ const res = document.querySelector('#res')
 function calcular() {
     res.innerHTML = ('')
 
+    const formulasNames = [
+      'Bhaskara',
+      'Área retângulo',
+      'Área quadrado',
+      'Área triângulo',
+      'Juros Simples'
+    ]
     const select = document.querySelector('#formulas')
-    const bhask = 'Bhaskara'
-    const areaR = 'Área retângulo'
-    const areaQ = 'Área quadrado'
-    const areaT = 'Área triângulo'
-    const jurosS = 'Juros Simples'
     
-    if(select.value == bhask){
+    if(select.value == formulasNames[0]){
         const abha = prompt('Digite o valor de a:')
         const n1 = Number(abha)
         const bbha =  prompt('Digite o valor de b:')
@@ -34,7 +36,7 @@ function calcular() {
             res.innerHTML = (`x = ${coeficiente1} <br>`);
             res.innerHTML = (`x = ${coeficiente2} <br>`);
           }
-    } else if(select.value == areaR){
+    } else if(select.value == formulasNames[1]){
        const baseR = prompt('Digite a medida da base:')
        const n4 = Number(baseR)
        const altR = prompt('Digite a medida da altura:')
@@ -45,7 +47,7 @@ function calcular() {
           alert(`Valores digitados são inválidos!`)
           res.innerHTML = ('')
        }
-    } else if(select.value == areaQ){
+    } else if(select.value == formulasNames[2]){
       const ladoQ = prompt('Digite a medida de um dos lados:')
       const n6 = Number(ladoQ)
       const areaQua = n6*n6
@@ -54,7 +56,7 @@ function calcular() {
         alert(`Valores digitados são inválidos!`)
         res.innerHTML = ('')
      }
-    } else if(select.value == areaT){
+    } else if(select.value == formulasNames[3]){
         const baseT = prompt('Digite a medida da base:')
         const n7 = Number(baseT)
         const altT = prompt('Digite a medida da altura:')
@@ -65,17 +67,17 @@ function calcular() {
           alert(`Valores digitados são inválidos!`)
           res.innerHTML = ('')
        } 
-    } else if (select.value == jurosS){
-        const capitalS = prompt('Digite o valor inicial (capital):')
+    } else if (select.value == formulasNames[4]){
+        const capital = prompt('Digite o valor inicial (capital):')
         const n9 = Number(capitalS)
-        const taxaS = prompt('Digite a taxa de juros:')
+        const taxa = prompt('Digite a taxa de juros(%):')
         const i = Number(taxaS)
         const n10 = i/100
-        const tempoS = prompt('Digite o tempo (meses):')
+        const tempo = prompt('Digite o tempo (meses):')
         const n11 = Number(tempoS)
-        const taxaJurosS = n9*n10*n11
+        const taxaJuros = n9*n10*n11
         const totalJuros = Number(taxaJurosS)
-        const montanteS = totalJuros + n9
+        const montante = totalJuros + n9
         res.innerHTML = (`A taxa de juros é: R$${totalJuros} <br/> O montante é R$${montanteS}`)
         if(isNaN(n9) || isNaN(n10) || isNaN(n11)){
           alert(`Valores digitados são inválidos!`)
