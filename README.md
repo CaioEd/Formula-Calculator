@@ -1,2 +1,2 @@
- # Formula Calculator U+1F5A9
+ # Formula Calculator :pocket calculator:
  Site que calcula fórmulas matemáticas de maneira fácil.
