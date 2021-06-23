@@ -1,2 +1,3 @@
  <h1 align="center"> Formula Calculator </h1>
- Site que calcula fórmulas matemáticas de maneira fácil.
+ **Project designed to calculate formulas more easily**
+##Tecnologies used in this project##
