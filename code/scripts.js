@@ -78,13 +78,12 @@ function calcular() {
         const taxaJuros = n9*n10*n11
         const totalJuros = Number(taxaJurosS)
         const montante = totalJuros + n9
-        res.innerHTML = (`A taxa de juros é: R$${totalJuros} <br/> O montante é R$${montanteS}`)
+        res.innerHTML = (`A taxa de juros é: R$              ${totalJuros}  O montante é R$ ${montanteS}`)
         if(isNaN(n9) || isNaN(n10) || isNaN(n11)){
           alert(`Valores digitados são inválidos!`)
           res.innerHTML = ('')
         }
     }
-    
 }
 
 calc.addEventListener('click', calcular)
