@@ -9,7 +9,7 @@ function calcular() {
       'Área retângulo',
       'Área quadrado',
       'Área triângulo',
-      'Juros Simples'
+      'Juros'
     ]
     const select = document.querySelector('#formulas')
     
@@ -69,16 +69,16 @@ function calcular() {
        } 
     } else if (select.value == formulasNames[4]){
         const capital = prompt('Digite o valor inicial (capital):')
-        const n9 = Number(capitalS)
+        const n9 = Number(capital)
         const taxa = prompt('Digite a taxa de juros(%):')
-        const i = Number(taxaS)
+        const i = Number(taxa)
         const n10 = i/100
         const tempo = prompt('Digite o tempo (meses):')
-        const n11 = Number(tempoS)
+        const n11 = Number(tempo)
         const taxaJuros = n9*n10*n11
-        const totalJuros = Number(taxaJurosS)
+        const totalJuros = Number(taxaJuros)
         const montante = totalJuros + n9
-        res.innerHTML = (`A taxa de juros é: R$              ${totalJuros}  O montante é R$ ${montanteS}`)
+        res.innerHTML = (`A taxa de juros é: R$ ${totalJuros} <br> O montante é R$ ${montante}`)
         if(isNaN(n9) || isNaN(n10) || isNaN(n11)){
           alert(`Valores digitados são inválidos!`)
           res.innerHTML = ('')
